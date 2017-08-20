@@ -28,7 +28,12 @@
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
-        <activity android:name=".test"></activity>
+        <activity android:name=".test">
+            <intent-filter>
+                <action android:name="android.intent.action.MAINACTIVIT" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
     </application>
 
 </manifest>

@@ -58,5 +58,9 @@ tools:context=".MainActivity">
     android:layout_height="wrap_content"
     android:id="@+id/buttonSend"
     android:text="Send"/>
-
+<Button
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="Start Activity"
+    android:id="@+id/startact"/>
 </LinearLayout>

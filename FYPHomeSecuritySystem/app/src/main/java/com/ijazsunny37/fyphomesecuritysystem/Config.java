@@ -5,6 +5,6 @@ package com.ijazsunny37.fyphomesecuritysystem;
  */
 
 public class Config {
-    public static final String EMAIL ="your-gmail-username";
-    public static final String PASSWORD ="your-gmail-password";
+    public static final String EMAIL ="your email";
+    public static final String PASSWORD ="your email pass";
 }

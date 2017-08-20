@@ -22,7 +22,7 @@ public class MainActivity extends AppCompatActivity {
     private EditText editTextMessage;
 
     //Send button
-    private Button buttonSend;
+    private Button buttonSend ,startacti;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -37,12 +37,22 @@ public class MainActivity extends AppCompatActivity {
         editTextMessage = (EditText) findViewById(R.id.editTextMessage);
 
         buttonSend = (Button) findViewById(R.id.buttonSend);
+        startacti = (Button) findViewById(R.id.startact);
 
         //Adding click listener
         buttonSend.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 sendEmail();
+            }
+        });
+
+        startacti.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent =new Intent(MainActivity.this, test.class);
+                startActivity(intent);
+                //Toast.makeText(getApplicationContext(),"Start",Toast.LENGTH_SHORT).show();
             }
         });
 
@@ -78,12 +88,9 @@ public class MainActivity extends AppCompatActivity {
             default:
                 return super.onOptionsItemSelected(item);
         }
-    }
 
-    public void start_activity(){
-        Intent intent = new Intent(MainActivity.this, test.class);
-        startActivity(intent);
 
     }
+
 
 }
