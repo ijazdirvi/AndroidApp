@@ -28,6 +28,9 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        Toolbar myToolbar = (Toolbar) findViewById(R.id.main_toolbar);
+        setSupportActionBar(myToolbar);
+
         MyDb = new DataBase_helper(this);
 
 
@@ -51,8 +54,9 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent intent =new Intent(MainActivity.this, test.class);
+                Toast.makeText(getApplicationContext(),"Start",Toast.LENGTH_SHORT).show();
                 startActivity(intent);
-                //Toast.makeText(getApplicationContext(),"Start",Toast.LENGTH_SHORT).show();
+
             }
         });
 

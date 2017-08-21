@@ -14,7 +14,7 @@ public class Splash_Activity extends Activity {
         super.onCreate(sunnylove);
         setContentView(R.layout.layout_splash);
 
-        Thread timer =new Thread(){
+        Thread timer = new Thread(){
             public void run(){
                 try {
                     sleep(5000);
@@ -22,7 +22,7 @@ public class Splash_Activity extends Activity {
                 }catch (InterruptedException e){
                     e.printStackTrace();
                 }finally {
-                    Intent openStartingPoint = new Intent(getApplicationContext(), MainActivity.class);
+                    Intent openStartingPoint = new Intent(Splash_Activity.this, Login_Activity.class);
                     startActivity(openStartingPoint);
                 }
             }
