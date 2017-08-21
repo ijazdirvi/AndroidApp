@@ -24,6 +24,7 @@ public class Splash_Activity extends Activity {
                 }finally {
                     Intent openStartingPoint = new Intent(Splash_Activity.this, Login_Activity.class);
                     startActivity(openStartingPoint);
+                    finish();
                 }
             }
         };
