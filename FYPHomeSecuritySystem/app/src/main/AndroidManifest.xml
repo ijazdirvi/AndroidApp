@@ -42,6 +42,16 @@
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
+
+        <activity android:name=".Home_Activity" android:label="Home">
+            <intent-filter>
+                <action android:name="android.intent.action.MAINACTIVIT" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Settings_Activity" android:label="Home">
+
+        </activity>
     </application>
 
 </manifest>

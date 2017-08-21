@@ -27,7 +27,7 @@ public class Login_Activity extends AppCompatActivity {
         login.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(getApplicationContext(), MainActivity.class);
+                Intent intent = new Intent(getApplicationContext(), Home_Activity.class);
                 startActivity(intent);
                 Toast.makeText(getApplicationContext(),"Home",Toast.LENGTH_SHORT).show();
             }
