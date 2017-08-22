@@ -11,5 +11,6 @@
     <color name="message_button">#ed6c15</color>
     <color name="message_button_hover">#c25810</color>
     <color name="camera_button_color">#17ba87</color>
+    <color name="holo_black">#dcdfde</color>
 
 </resources>

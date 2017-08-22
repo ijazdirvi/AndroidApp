@@ -11,13 +11,15 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.Toast;
 
+import com.cuboid.cuboidcirclebutton.CuboidButton;
+
 /**
  * Created by apple on 21/8/17.
  */
 
 public class Home_Activity extends AppCompatActivity {
 
-    Button settings;
+    CuboidButton settings;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -25,7 +27,16 @@ public class Home_Activity extends AppCompatActivity {
         Toolbar myToolbar = (Toolbar) findViewById(R.id.main_toolbar);
         setSupportActionBar(myToolbar);
 
-        //settings = (Button) findViewById(R.id.btn_settings);
+        settings = (CuboidButton) findViewById(R.id.btn_settings);
+
+        settings.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent1 =  new Intent(Home_Activity.this, Settings_Activity.class);
+                startActivity(intent1);
+                Toast.makeText(getApplication(),"Settings Area",Toast.LENGTH_SHORT).show();
+            }
+        });
 
 
     }
